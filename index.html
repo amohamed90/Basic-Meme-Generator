@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meme-Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Create Your Own Meme</h1>
+
+    <form>
+
+      <div>
+        <label for="topText">Top text</label>
+        <input type="text" id="topText" placeholder="(Optional) Your Meme Top Text" pattern=".{0,20}" title="20 characters max"/>
+      </div>
+
+      <div>
+        <label for="bottomText">Bottom text</label>
+        <input type="text" id="bottomText" placeholder="(Optional) Your Meme Bottom Text" pattern=".{0,20}" title="20 characters max">
+      </div>
+
+      <div>
+        <label for="memeURL">Image URL</label>
+        <input type="url" id="memeURL" placeholder="Put Your Meme URL" required />
+      </div>
+
+      <div id="btn">
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+
+    <div class="placement">
+
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
